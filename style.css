@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 100px auto;
+}
+hr{
+    margin-bottom: 30px;
+    opacity: .5;
+}
+a:hover{
+    background-color: #c5c7c5;
+    color: white;
+    transition: 0,25;
+}
+/* nav */
+.nv{
+    background-color:white ;
+    position:sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    top: 0;
+    padding: 15px;
+
+}
+
+.nv a{
+    text-decoration: none;
+    color: #9ea0a0;
+    padding: 10px;
+}
+/*  */
+/* header */
+header{
+    height: 100vh;
+    position: relative;
+    background-image: url(imge/1.jpg);
+    background-size: cover;
+    background-position: center;
+
+    /* background-position: center; */
+}
+
+.w3-head{
+    position: absolute;
+    bottom:20px;
+    left: 20px;
+    letter-spacing: 2px;
+    color: #9ea0a0;
+}
+/* about */
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    padding: 0 0px;
+    /* margin: 20px 0; */
+    /* align-items: center; */
+    /* padding: 30px 60px; */
+}
+.about-left, .about-right {
+    max-width: 48%;
+}
+.about-left img{
+    height: 650px;
+    width:100%;
+    vertical-align: middle;
+
+}
+.about-content .about-right{
+
+    width: 100%;
+    /* text-align: center; */
+    padding: 10px;
+    margin: 20px auto;
+}
+.about-right h1,h5{
+    white-space: 4px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+p{
+    white-space:2px ;
+    line-height: 1.5;   
+    font-size: 18px;
+}
+.p-b{
+    color: #9ea0a0;
+    margin-top: 20px;
+
+}
+/* menu */
+.menu-content{
+    display: flex;
+    gap: 80px;
+    /* padding: 50px 60px; */
+    justify-content: space-between;
+    width: 100%;
+}
+.food ,.ig{
+    width: 48%;
+}
+.menu-content .ig img{
+    width: 90%;
+    height: 600px;
+}
+.menus h1{
+    word-spacing: 5px;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.menus h4 {
+    padding: 30px 50px;
+    word-spacing: 3px;
+    letter-spacing: 4px;
+}
+.menus .text{
+    /* padding-bottom: 30px; */
+    padding-left: 50px;
+    color: gray;
+}
+/* content */
+
+
+.content .h1-count{
+    padding-left:30px;
+    letter-spacing: 2px;
+}
+.content p{
+    padding: 30px;
+}
+.content .w3-text{
+    /* padding: 0; */
+    margin: -10px 0;
+    color: #799979;
+}
+.content input{
+    padding: 10px;
+    width: 80%;
+    display: block;
+    outline: none;
+    margin :10px 15px ;
+    border: none;
+    border-bottom: #9ea0a0 solid 2px;
+}
+.content  button{
+    margin: 15px;
+    padding: 10px;
+    border: none;
+    transition: .5;
+}
+.content  button:hover{
+    background-color: #9ea0a0;
+}
+/* footer */
+.foot{
+    height: 100px;
+    background-color: #bababa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.foot p {
+    color: #a2a29b;  
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.foot a{
+    color: #a2a29b;
+    text-transform: capitalize;
+    padding-left: 5px;
+}
+
+.foot a:hover{
+    color: #5fc05f;
+    transition: 0.25;
+}
+@media screen and (max-width :480px) {
+    /* .nv{
+        position: sticky;
+        z-index: 2;
+        top: 0;
+    } */
+    .nav2{
+        display: none;
+    }
+    .nav1{
+        padding: 10px;
+    }
+    .about-content{
+        flex-direction: column;
+    }
+    .about-left, .about-right {
+        max-width: 100%;
+    }
+    .menu-content{
+        flex-direction: column;
+    }
+    .food ,.ig{
+        width: 100%;
+        margin: 0 auto;
+    }
+    img{
+        width: 100%;
+    }
+}
